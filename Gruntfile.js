@@ -7,8 +7,9 @@ module.exports = function(grunt) {
                 indent: 4,
                 latedef: true,
                 quotmark: true,
-                trailing: true
-            },
+                trailing: true,
+                ignores: ['app/public/js/thirdparty/*']
+            },            
             all: ['Gruntfile.js', 'app/**/*.js']
         }
     });

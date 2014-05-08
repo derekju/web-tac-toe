@@ -160,15 +160,15 @@
         },
 
         isDraw: function (tileArray) {
-            if ((tileArray[0] != null) &&
-                (tileArray[1] != null) &&
-                (tileArray[2] != null) &&
-                (tileArray[3] != null) &&
-                (tileArray[4] != null) &&
-                (tileArray[5] != null) &&
-                (tileArray[6] != null) &&
-                (tileArray[7] != null) &&
-                (tileArray[8] != null))
+            if ((tileArray[0] !== null) &&
+                (tileArray[1] !== null) &&
+                (tileArray[2] !== null) &&
+                (tileArray[3] !== null) &&
+                (tileArray[4] !== null) &&
+                (tileArray[5] !== null) &&
+                (tileArray[6] !== null) &&
+                (tileArray[7] !== null) &&
+                (tileArray[8] !== null))
             {
                 return true;
             } else {
@@ -180,7 +180,7 @@
             var tileResults = [];
             for (var i = 0; i < 9; i++) {
                 // If tile is occupied go to the next one
-                if (currentBoardArray[i] != null) {
+                if (currentBoardArray[i] !== null) {
                     tileResults[i] = (iteration % 2 == 1) ? -1000 : 1000;
                     continue;
                 }
