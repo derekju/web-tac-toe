@@ -1,0 +1,147 @@
+html,
+body,
+#application {
+	height: 100%;
+}
+
+body {
+	background-color: white;
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #bbbbbb;
+}
+
+#title {
+	color: black;
+	font-size: 32px;
+	font-weight: 300;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	line-height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#directions {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	font-weight: 300;
+	text-align: center;
+}
+
+#container {
+	height: 100%;
+	position: relative;
+}
+
+#board {
+	height: 490px;		
+	margin: auto;
+	width: 490px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: absolute;	
+}
+
+.tile {
+	background-color: #dddddd;
+	cursor: pointer;
+	font-size: 72px;
+	font-weight: 700;
+	float: left;
+	height: 150px;
+	line-height: 150px;
+	margin: 10px 0 0 10px;
+	text-align: center;
+	width: 150px;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;	
+}
+
+.tile.unset:hover {
+	background-color: #cccccc;
+}
+
+.tile.playerOneWon {
+	background-color: #62dd96;
+}
+
+.tile.playerTwoWon {
+	background-color: #dd6262;
+}
+
+#results {
+	display: none;
+	height: 100%;
+	width: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 300;
+	background-color: #333333;
+	color: #ffffff;
+}
+
+#results-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	height: 100px;
+}
+
+#next-game {
+	display: block;
+	margin-top: 25px;
+}
+
+#score {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	height: 100px;
+	line-height: 100px;
+}
+
+#score-container {
+	width: 200px;
+	margin: 0 auto;
+}
+
+#score #p1 {
+	float: left;
+	margin-right: 50px;
+}
+
+#score #p2 {
+	float: right;
+}
