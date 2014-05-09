@@ -9,6 +9,12 @@ The server is written in Node using Express as the routing framework. There isn'
 
 An attempt was made at presenting where configs, run-time constants, and translated strings could live in order to abstract out their definitions from the controllers and views.
 
+Server code is located at:
+
+    app/config/*
+    app/routes/*
+    app/server.js
+
 ### Client
 
 The client was written using Backbone.js as the framework. Backbone was chosen as it has the seperation of models and views needed to keep the code clean and has a built-in event manager for the views to communicate.
