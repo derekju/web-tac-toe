@@ -1,6 +1,7 @@
 var _ = require('underscore'),
     morgan = require('morgan'),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    compression = require('compression');
 
 module.exports = function (app, express) {
     var paths = {
@@ -13,13 +14,16 @@ module.exports = function (app, express) {
         constants = require(paths.CONFIG_PATH + '/constants.json'),
         strings = require(paths.CONFIG_PATH + '/strings.json');
 
+    // Compression
+    app.use(compression());
+
     // Logging
     app.use(morgan());
 
     // Middleware
     app.set('views', paths.VIEWS_PATH);
     app.set('view engine', 'jade');
-    app.use(express.static(paths.PUBLIC_PATH));
+    app.use(express.static(paths.PUBLIC_PATH), { maxAge: 86400000 });
     app.use(bodyParser());
 
     return _.extend(paths, constants, strings);

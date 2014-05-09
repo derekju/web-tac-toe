@@ -5,6 +5,7 @@
     "private": true,
     "dependencies": {
         "express": "4.0.x",
+        "compression": "1.0.x",
         "morgan": "1.0.x",
         "body-parser": "1.0.x",
         "jade": "1.3.x",
