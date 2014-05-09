@@ -39,3 +39,7 @@ A recursive solution was sought in order to recurse through all possible combina
 Recursion also allows for potential expansion of the board from 3 x 3 to n x n.
 
 Due to the computer always choosing the path that yields either a draw or a win for itself, winning the game for the player is extremely difficult, if not impossible. A difficulty setting could be provided that could be used to alter or randomize the scoring algorithm so that the computer will not always choose the best path.
+
+### Hosting
+
+The app is hosted on heroku using their one free Dyno. Since it's only running on a single 1x box, the app will go to sleep after inactivity. Thus, the first initial load will take a bit longer to wake up the box.
