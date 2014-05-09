@@ -3,5 +3,5 @@
         app = express(),
         config = require(__dirname + '/config/config')(app, express);
     require(__dirname + '/routes')(app, config);
-    app.listen(config.APP_PORT);
+    app.listen(process.env.PORT || config.APP_PORT);
 })();
