@@ -36,4 +36,6 @@ The algorithm used for the computer was the minimax algorithm. I originally was 
 
 A recursive solution was sought in order to recurse through all possible combinations of moves in order to find the best one for the computer to take. The first few attempts resulted in incorrect scores being used but that was corrected to yield the correct, current solution.
 
+Recursion also allows for potential expansion of the board from 3 x 3 to n x n.
+
 Due to the computer always choosing the path that yields either a draw or a win for itself, winning the game for the player is extremely difficult, if not impossible. A difficulty setting could be provided that could be used to alter or randomize the scoring algorithm so that the computer will not always choose the best path.
