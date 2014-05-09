@@ -1,13 +1,13 @@
 {
-	"strings": {
-		"en_US": {
-			"page_title": "web|tac|toe for Hipmunk",
-			"title": "web | tac | toe",
-			"directions": "Click on any tile to begin",
-			"you_won": "you won!",
-			"you_lost": "you lost :(",
-			"draw": "draw.",
-			"next_game": "start next game >"
-		}
-	}
+    "strings": {
+        "en_US": {
+            "page_title": "web|tac|toe for Hipmunk",
+            "title": "web | tac | toe",
+            "directions": "Click on any tile to begin",
+            "you_won": "you won!",
+            "you_lost": "you lost :(",
+            "draw": "draw.",
+            "next_game": "start next game >"
+        }
+    }
 }

@@ -3,7 +3,7 @@ module.exports = function (app, config) {
         res.render(
             'index',
             {
-            	strings: config.strings[config.DEFAULT_LOCALE]
+                strings: config.strings[config.DEFAULT_LOCALE]
             }
         );
     });
