@@ -3,9 +3,6 @@
     "description": "Tic Tac Toe for Hipmunk",
     "version": "1.0.0",
     "private": true,
-    "scripts": {
-        "start": "node app/server.js"
-    },
     "dependencies": {
         "express": "4.0.x",
         "morgan": "1.0.x",
